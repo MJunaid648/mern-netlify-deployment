@@ -1,0 +1,24 @@
+{
+  "name": "job-seekers-data-server",
+  "version": "1.0.0",
+  "description": "this app is for job seekers data",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file .env --watch app.js"
+  },
+  "author": "648mjunaid@gmail.com",
+  "license": "ISC",
+  "homepage": "https://kiss-talenthub.netlify.app/",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.735.0",
+    "@aws-sdk/lib-storage": "^3.735.0",
+    "@aws-sdk/s3-request-presigner": "^3.735.0",
+    "@google-cloud/storage": "^7.15.0",
+    "@netlify/functions": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
+  }
+}
