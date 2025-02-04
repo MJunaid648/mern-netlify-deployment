@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function fetchPresignedUrl(objectKey) {
   try {
-    const response = await axios.get("http://localhost:3000/getPresignedURL", {
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/getPresignedURL`, {
       params: {
         bucketName: "job-seekers-data",
         objectKey,
